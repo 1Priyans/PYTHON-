@@ -21,23 +21,23 @@ NOTE: The Functionality of bytearray is extactly similar to bytes But an object 
 
 #Example:
 
-# lst = [10, 20, 30, 50, 270, 60]
-# print(lst,type(lst)) # [10, 20, 30, 50, 270, 60] <class 'list'>
-# lst = bytearray(lst)
-# print(lst) # ValueError: byte must be in range(0, 256)
+lst = [10, 20, 30, 50, 270, 60]
+print(lst,type(lst)) # [10, 20, 30, 50, 270, 60] <class 'list'>
+lst = bytearray(lst)
+print(lst) # ValueError: byte must be in range(0, 256)
 
-# lst = [-10, 20, 30, 50, 27, 60]
-# print(lst,type(lst)) # [-10, 20, 30, 50, 27, 60] <class 'list'>
-# lst = bytearray(lst)
-# print(lst) # ValueError: byte must be in range(0, 256)
+lst = [-10, 20, 30, 50, 27, 60]
+print(lst,type(lst)) # [-10, 20, 30, 50, 27, 60] <class 'list'>
+lst = bytearray(lst)
+print(lst) # ValueError: byte must be in range(0, 256)
 
 lst = [10, 20, 30, 50, 27, 60]
 print(lst,type(lst)) # [10, 20, 30, 50, 27, 60] <class 'list'>
 lst = bytearray(lst)
 print(lst,type(lst),id(lst))  # bytearray(b'\n\x14\x1e2\x1b<') <class 'bytearray'> 351804356720
 
-# for val in lst:
-#     print(val)
+for val in lst:
+    print(val)
 # # this output we get
 # # 10
 # # 20
