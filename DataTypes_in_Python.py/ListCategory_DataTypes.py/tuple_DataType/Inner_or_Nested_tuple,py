@@ -1,0 +1,70 @@
+__Properties = '''
+1) The Process of Defining One tuple in another tuple is called Inner or Nested tuple
+
+Syntax:- tplobj1=( Val1,Val2....(Val11,Val12....Val1n).....(Val21,Val22...Val2n)..........Val-n )
+
+2)Here  (Val11,Val12....Val1n) is called One Inner OR Nested tuple
+	    
+        (Val21,Val22...Val2n)  is called another Inner OR Nested tuple
+      
+        ( Val1,Val2....(Val11,Val12....Val1n).....(Val21,Val22...Val2n)....Val-n ) is called Outer tuple
+
+3) All the pre-defined Functions of tuple can be applied on Inner or Nested tuple.
+
+4) On Inner or Nested tuple we can perform Index and Slicing Operations.'''
+
+#Example:
+# tpl = ("HYD", 28, 34, (12, 19,16), (100, 99, 98), "MAVRICK")
+# print(tpl,type(tpl)) # ('HYD', 28, 34, (12, 19, 16), (100, 99, 98), 'MAVRICK') <class 'tuple'>
+
+# print(tpl[3],type(tpl[3]),type(tpl)) # (12, 19, 16) <class 'tuple'> <class 'tuple'>
+# print(tpl[4],type(tpl[4]),type(tpl)) # 100, 99, 98) <class 'tuple'> <class 'tuple'>
+# print(tpl[5],type(tpl[5]),type(tpl)) # MAVRICK <class 'str'> <class 'tuple'>
+
+# for val in tpl:
+#     print((val),type(val),type(tpl))
+#This is Output we get
+# HYD <class 'str'> <class 'tuple'>
+# 28 <class 'int'> <class 'tuple'>
+# 34 <class 'int'> <class 'tuple'>
+# (12, 19, 16) <class 'tuple'> <class 'tuple'>
+# (100, 99, 98) <class 'tuple'> <class 'tuple'>
+# MAVRICK <class 'str'> <class 'tuple'>
+
+
+# tpl = ("HYD", 28, 34, [12, 19,16], (100, 99, 98), "MAVRICK") # List in Tuple
+# print(tpl,type(tpl)) # ('HYD', 28, 34, [12, 19, 16], (100, 99, 98), 'MAVRICK') <class 'tuple'>
+
+# print(tpl[3],type(tpl[3]),type(tpl)) # [12, 19, 16] <class 'list'> <class 'tuple'>
+
+# tpl[3].append(20)
+# print(tpl,type(tpl)) # ('HYD', 28, 34, [12, 19, 16, 20], (100, 99, 98), 'MAVRICK') <class 'tuple'>
+
+# tpl[4].append(12)
+# print(tpl,type(tpl)) # AttributeError: 'tuple' object has no attribute 'append'
+
+# tpl[3].append(100)
+# print(tpl,type(tpl)) # ('HYD', 28, 34, [12, 19, 16, 20, 100], (100, 99, 98), 'MAVRICK') <class 'tuple'>
+
+
+tpl1 = ["HYD", 28, 34, (12, 19,16), (100, 99, 98), "MAVRICK"]
+# print(tpl1,type(tpl1)) # ['HYD', 28, 34, (12, 19, 16), (100, 99, 98), 'MAVRICK'] <class 'list'>
+
+# tpl1[2].append(100)
+# print(tpl1,type(tpl1[2]),type(tpl1))
+tpl3 = tuple(tpl1)
+print(tpl3,type(tpl3)) # ('HYD', 28, 34, (12, 19, 16), (100, 99, 98), 'MAVRICK') <class 'tuple'>
+print(tpl1,type(tpl1)) # ['HYD', 28, 34, (12, 19, 16), (100, 99, 98), 'MAVRICK'] <class 'list'>
+
+tpl4 = sorted(tpl3[-2])
+print(tpl4,type(tpl4)) # ['HYD', 28, 34, (12, 19, 16), (100, 99, 98), 'MAVRICK'] <class 'list'>
+
+tl = ('AI', 'cSE', 'DS')
+print(tl,type(tl)) # ('AI', 'cSE', 'DS') <class 'tuple'>
+
+tl1 = sorted(tl)
+print(tl1,type(tl1)) #  ['AI', 'DS', 'cSE'] <class 'list'>
+tl1.sort()
+print(tl1,type(tl1)) 
+
+
