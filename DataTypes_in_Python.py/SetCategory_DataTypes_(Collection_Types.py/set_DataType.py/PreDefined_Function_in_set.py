@@ -163,7 +163,7 @@ print(s1.isdisjoint(s3)) # True  #There is no Common Element
 print(s2.isdisjoint(s3)) # True # There is no Common Element
 
 
-#8. isdisjoint():
+#8. issubset():
 _Properties = '''Syntax: setobj1.issubset(setobj2)
 
 a) This Function Returns True Provided all Elements of setobj1 are present in setobj2 .
