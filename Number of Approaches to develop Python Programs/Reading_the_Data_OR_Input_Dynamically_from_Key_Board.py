@@ -70,15 +70,12 @@ print("-"*60)
 print("Mul {}".format(c))
 print("-"*60)
 
-#                                        "OR"
 
-print("Mul {}".format(float(input("Enter First Value ")) * float(input("Enter Second Value "))))
 
-#                                        "OR"
-
-# Program for cal area and Perimeter of Rectangle
+# C Program for cal area and Perimeter of Rectangle
 lth = float(input("Enter the Length "))
 bth = float(input("Enter the Breadth "))
+float(input("Enter the Breadth "))
 ar = lth * bth
 peri = 2*(lth + bth)
 print("-"*60)
@@ -88,9 +85,8 @@ print("\tArea of Rectangle = {} ".format(ar))
 print("\tPerimeter of Rectangle = {}".format(peri))
 print("-"*60)
 
-#                                        "OR"
 
-# program for cal Area and Perimeter  of Circle
+# D program for cal Area and Perimeter  of Circle
 rad = float(input("Enter the Radius of Given Circle: "))
 ar = 3.14 * (rad * rad)
 peri = (2 * 3.14 * rad)
@@ -100,4 +96,12 @@ print("Area = %.2f" %ar)
 print("Perimeter = %.2f" %peri)
 print("*"*60)
 
-
+# E Program for cal Area and Perimeter of Square
+s = float(input("Enter the given side of Square: "))
+ar = s**2
+peri = 4*s
+print("*"*70)
+print("Side of the Square  = {}".format(s))
+print("Area of Square = {}".format(ar))
+print("Perimeter of Square = {}".format(peri))
+print("*"*70)
