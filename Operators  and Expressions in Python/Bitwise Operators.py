@@ -145,3 +145,94 @@ print(100 and 200 or 567 or "KVR" and 450 and 678)  # 200
 print(100 & 200)  # 64
 print(100 and 200)  # 200
 print("$" and "%" or 123)  # "%"
+
+# 4 Bitwise AND Operator:
+___Properties = '''             Syntax:    varname=Val1 & Val2
+
+1) The Functionality of Bitwise AND Operator is expressed by using the following Truth Table
+		======================================================================
+			Val1		Val2		    Val1 & Val2
+		======================================================================
+			 0		     0			        0	
+			 1		     0		        	0
+			 0		     1			        0
+			 1		     1			        1
+		====================================================================== '''
+
+# Example:
+print(0 and 0)  # 0
+print(1 and 0)  # 0
+print(0 and 1)  # 0
+print(1 and 1)  # 1
+
+a = 14
+b = 13
+c = (a & b)  # Here 14--> 1110, 13-->1101(binary form) so here 1110 and 1101----> 1100 which is 12
+print(c, type(c))  # 12 <class 'int'>
+
+print(10 and 15)  # 10
+
+print(3 & 4)  # 0
+
+print("Keshav" and "Regular" and "Forgot")  # "Forgot"
+
+print(bin(4))
+
+# 5. Bitwise Complement Operator
+_Properties = '''           Syntax:-     varname=~value
+
+1) The Functionality of Bitwise Complement Operator ( ~ ) is that "It Inverts the bits".
+
+2) Inverting the Bits are nothing but 0 becomes 1 and 1 becomes 0.
+
+3) The Formula for Bitwise Complement Operator ( ~ ) is that " ~Value= - (Value+1)'''
+
+# Example:
+a = 12
+c = (~ a)  # here is 12---> 1100 and formula is -(value + 1) i.e. -(1100 or 0001) so result is 1101(bin) which is -13
+print(c, type(c))  # -13 <class 'int'>
+print(a)  # 12
+
+# 6. Bitwise XOR Operator
+____Properties = '''        Syntax:    varname = Val1 ^ Val2
+
+1) The Functionality of BitwiseXOR Operator is expressed by using the following Truth Table
+===============================================================
+		  Val1		     Val2		Val1 ^ Val2
+===============================================================
+			0		      0			     0	
+			1		      0			     1
+			0		      1			     1
+			1		      1			     0
+=============================================================== '''
+
+# Example:
+print(0 ^ 0)  # 0
+print(0 ^ 1)  # 1
+print(1 ^ 0)  # 1
+print(1 ^ 1)  # 0
+
+a = 4
+b = 2
+c = (a ^ b)  # here 4-->0100, 2-->0010 now, (0100 '^' XOR  0010 = 0110) which is 6
+print(c, type(c))  # 6 <class 'int'>
+print(b, type(b))  # 2 <class 'int'>
+print(a, type(a))  #4 <class 'int'>
+
+print(4 ^ 5)  # 1
+
+print(10 ^ 5)  # 15
+
+s1 = {10, 20, 30}
+s2 = {15, 20, 25}
+print(s1,type(s1))  # {10, 20, 30} <class 'set'>
+print(s2,type(s2))  # {25, 20, 15} <class 'set'>
+
+s3 = s1.symmetric_difference(s2)
+print(s3, type(s3))  # {10, 15, 25, 30} <class 'set'>
+
+s4 = (s1 ^ s2)  # Bitwise XOR
+
+print(s4, type(s4))  # {10, 15, 25, 30} <class 'set'>
+
+
