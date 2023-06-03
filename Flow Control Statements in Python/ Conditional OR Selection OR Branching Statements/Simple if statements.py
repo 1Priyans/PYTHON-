@@ -1,4 +1,4 @@
-# 2. Simple if statements
+# 1. Simple if statements
 ___Properties = '''
 Syntax :
 
