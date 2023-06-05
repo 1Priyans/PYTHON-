@@ -60,59 +60,59 @@ __ques = '''
 Enter Your Choice:  
 ----------------------------------------------------------'''
 # Programming for Performing Arithmatic Operation by using match case statement.
-# import sys
-# print("---------------------------------------------------------")
-# print("\tArithmatic Operation" )
-# print("---------------------------------------------------------")
-# print("1. Addition")
-# print("2. Subtraction")
-# print("3. Multiplication")
-# print("4. Division")
-# print("5. Modulo Division")
-# print("6. Exponentiation")
-# print("7. Exit")
-# print("---------------------------------------------------------")
-#
-# ch = int(input("Enter Your Choice: "))
-# match(ch):
-#     case 1:
-#         print("Enter Two values for Addition: ")
-#         a, b = float(input()), float(input())
-#         print("\tAdd({}, {}) = {}".format(a, b, a + b))
-#
-#     case 2:
-#         print("Enter Two values for Subtraction: ")
-#         a, b = float(input()), float(input())
-#         print("\tSub({}, {}) = {}".format(a, b, a - b))
-#
-#     case 3:
-#         print("Enter Two values for Multiplication: ")
-#         a, b = float(input()), float(input())
-#         print("\tMul({}, {}) = {}".format(a, b, a * b))
-#
-#     case 4:
-#         print("Enter Two values for Division: ")
-#         a, b = float(input()), float(input())
-#         print("\tDiv({}, {}) = {}".format(a, b, a / b))
-#
-#     case 5:
-#         print("Enter Two values for Modulo Division: ")
-#         a, b = float(input()), float(input())
-#         print("\tSub({}, {}) = {}".format(a, b, a // b))
-#
-#     case 6:
-#         print("Enter Two values for Exponentiation: ")
-#         a, b = float(input()), float(input())
-#         print("\tSub({}, {}) = {}".format(a, b, a ** b))
-#
-#     case 7:
-#         print("Thanks for Using this Program:  ")
-#         sys.exit()
-#
-#     case _:
-#         print("Ur Selection of Operation is wrong-try again")
-#
-# print("------------------------------------------------------")
+import sys
+print("---------------------------------------------------------")
+print("\tArithmatic Operation" )
+print("---------------------------------------------------------")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+print("5. Modulo Division")
+print("6. Exponentiation")
+print("7. Exit")
+print("---------------------------------------------------------")
+
+ch = int(input("Enter Your Choice: "))
+match(ch):
+    case 1:
+        print("Enter Two values for Addition: ")
+        a, b = float(input()), float(input())
+        print("\tAdd({}, {}) = {}".format(a, b, a + b))
+
+    case 2:
+        print("Enter Two values for Subtraction: ")
+        a, b = float(input()), float(input())
+        print("\tSub({}, {}) = {}".format(a, b, a - b))
+
+    case 3:
+        print("Enter Two values for Multiplication: ")
+        a, b = float(input()), float(input())
+        print("\tMul({}, {}) = {}".format(a, b, a * b))
+
+    case 4:
+        print("Enter Two values for Division: ")
+        a, b = float(input()), float(input())
+        print("\tDiv({}, {}) = {}".format(a, b, a / b))
+
+    case 5:
+        print("Enter Two values for Modulo Division: ")
+        a, b = float(input()), float(input())
+        print("\tSub({}, {}) = {}".format(a, b, a // b))
+
+    case 6:
+        print("Enter Two values for Exponentiation: ")
+        a, b = float(input()), float(input())
+        print("\tSub({}, {}) = {}".format(a, b, a ** b))
+
+    case 7:
+        print("Thanks for Using this Program:  ")
+        sys.exit()
+
+    case _:
+        print("Ur Selection of Operation is wrong-try again")
+
+print("------------------------------------------------------")
 
 
 
@@ -130,49 +130,49 @@ _ques = '''
 Enter Your Choice:  
 ----------------------------------------------------------'''
 # Programming for Cal Area of diff figures by using match case statement>
-# import sys
-# print("---------------------------------------------------------")
-# print("\tArea of Different Figures")
-# print("---------------------------------------------------------")
-# print("C. Circle")
-# print("R. Rectangle")
-# print("S. Square")
-# print("T. Triangle")
-# print("E. Exit")
-# print("---------------------------------------------------------")
-#
-# ch = input("Enter Your Choice: ").upper()
-# match(ch):
-#     case "C":
-#         rad = float(input("Enter Radius: "))
-#         ar = 3.14 * rad**2
-#         print("\tArea of Circle ({}) = {}".format(rad, ar))
-#
-#     case "R":
-#         a = float(input("Enter Length: "))
-#         b = float(input("Enter Breadth: "))
-#         ar = a * b
-#         print("\tArea of Rectangle ({}, {}) = {}".format(a, b, ar))
-#
-#     case "S":
-#         s = float(input("Enter Side: "))
-#         ar = s ** 2
-#         print("\tArea of Square ({}) = {}".format(s, ar))
-#
-#     case "T":
-#         b = float(input("Enter Base: "))
-#         h = float(input("Enter Height: "))
-#         ar = b * h
-#         print("\tArea of Triangle ({}, {}) = {}".format(b, h, ar))
-#
-#     case "E":
-#         print("Thanks for this program")
-#         sys.exit()
-#
-#     case _:
-#         print("Ur Selection of Operation is Wrong Please Try again")
-#
-# print("--------------------------------------------------------------")
+import sys
+print("---------------------------------------------------------")
+print("\tArea of Different Figures")
+print("---------------------------------------------------------")
+print("C. Circle")
+print("R. Rectangle")
+print("S. Square")
+print("T. Triangle")
+print("E. Exit")
+print("---------------------------------------------------------")
+
+ch = input("Enter Your Choice: ").upper()
+match(ch):
+    case "C":
+        rad = float(input("Enter Radius: "))
+        ar = 3.14 * rad**2
+        print("\tArea of Circle ({}) = {}".format(rad, ar))
+
+    case "R":
+        a = float(input("Enter Length: "))
+        b = float(input("Enter Breadth: "))
+        ar = a * b
+        print("\tArea of Rectangle ({}, {}) = {}".format(a, b, ar))
+
+    case "S":
+        s = float(input("Enter Side: "))
+        ar = s ** 2
+        print("\tArea of Square ({}) = {}".format(s, ar))
+
+    case "T":
+        b = float(input("Enter Base: "))
+        h = float(input("Enter Height: "))
+        ar = b * h
+        print("\tArea of Triangle ({}, {}) = {}".format(b, h, ar))
+
+    case "E":
+        print("Thanks for this program")
+        sys.exit()
+
+    case _:
+        print("Ur Selection of Operation is Wrong Please Try again")
+
+print("--------------------------------------------------------------")
 
 
 _quest = '''
@@ -189,51 +189,51 @@ _quest = '''
 Enter Your Choice:  
 ----------------------------------------------------------'''
 # Programming for Cal Area of diff figures Multiple at a time by using match case statement
-# import sys
-#
-# while True:
-#
-#     print("---------------------------------------------------------")
-#     print("\tArea of Different Figures")
-#     print("---------------------------------------------------------")
-#     print("C. Circle")
-#     print("R. Rectangle")
-#     print("S. Square")
-#     print("T. Triangle")
-#     print("E. Exit")
-#     print("---------------------------------------------------------")
-#     ch = input("Enter Your Choice: ").upper()
-#     match ch:
-#         case "C":
-#             rad = float(input("Enter Radius: "))
-#             ar = 3.14 * rad**2
-#             print("\tArea of Circle ({}) = {}".format(rad, ar))
-#
-#         case "R":
-#             a = float(input("Enter Length: "))
-#             b = float(input("Enter Breadth: "))
-#             ar = a * b
-#             print("\tArea of Rectangle ({}, {}) = {}".format(a, b, ar))
-#
-#         case "S":
-#             s = float(input("Enter Side: "))
-#             ar = s ** 2
-#             print("\tArea of Square ({}) = {}".format(s, ar))
-#
-#         case "T":
-#             b = float(input("Enter Base: "))
-#             h = float(input("Enter Height: "))
-#             ar = b * h
-#             print("\tArea of Triangle ({}, {}) = {}".format(b, h, ar))
-#
-#         case "E":
-#             print("Thanks for using this program")
-#             sys.exit()
-#
-#         case _:
-#             print("Ur Selection of Operation is Wrong Please Try again")
-#
-#     print("--------------------------------------------------------------")
+import sys
+
+while True:
+
+    print("---------------------------------------------------------")
+    print("\tArea of Different Figures")
+    print("---------------------------------------------------------")
+    print("C. Circle")
+    print("R. Rectangle")
+    print("S. Square")
+    print("T. Triangle")
+    print("E. Exit")
+    print("---------------------------------------------------------")
+    ch = input("Enter Your Choice: ").upper()
+    match ch:
+        case "C":
+            rad = float(input("Enter Radius: "))
+            ar = 3.14 * rad**2
+            print("\tArea of Circle ({}) = {}".format(rad, ar))
+
+        case "R":
+            a = float(input("Enter Length: "))
+            b = float(input("Enter Breadth: "))
+            ar = a * b
+            print("\tArea of Rectangle ({}, {}) = {}".format(a, b, ar))
+
+        case "S":
+            s = float(input("Enter Side: "))
+            ar = s ** 2
+            print("\tArea of Square ({}) = {}".format(s, ar))
+
+        case "T":
+            b = float(input("Enter Base: "))
+            h = float(input("Enter Height: "))
+            ar = b * h
+            print("\tArea of Triangle ({}, {}) = {}".format(b, h, ar))
+
+        case "E":
+            print("Thanks for using this program")
+            sys.exit()
+
+        case _:
+            print("Ur Selection of Operation is Wrong Please Try again")
+
+    print("--------------------------------------------------------------")
 
 
 __quest1 = '''
@@ -253,83 +253,83 @@ __quest1 = '''
 Enter Your Choice:  
 ---------------------------------------------------------- '''
 # Programming for Match Case Statement
-# import sys
-#
-# print("---------------------------------------------------------")
-# print("\tWorking and Weekend Schedule of classes")
-# print("---------------------------------------------------------")
-# print("\t MONDAY")
-# print("\t TUESDAY")
-# print("\t WEDNESDAY")
-# print("\t THURSDAY")
-# print("\t FRIDAY")
-# print("\t SATURDAY")
-# print("\t SUNDAY")
-# print("\t EXIT")
-# print("---------------------------------------------------------")
-#
-# wkd = (input("Enter the Week name: ").upper())
-# match wkd:
-#     case "MONDAY":
-#         print("{} is Working Day:".format(wkd))
-#
-#     case "TUESDAY":
-#         print("{} is Working Day:".format(wkd))
-#
-#     case "WEDNESDAY":
-#         print("{} is Working Day:".format(wkd))
-#
-#     case "THURSDAY":
-#         print("{} is Working Day:".format(wkd))
-#
-#     case "FRIDAY":
-#         print("{} is Working Day:".format(wkd))
-#
-#     case "SATURDAY":
-#         print("{} is Week End preparing UGAC Plans:".format(wkd))
-#
-#     case "SUNDAY":
-#         print("{} is Holiday Day for Resting :".format(wkd))
-#
-#     case _:
-#         print("{} is not a week Day--> plz learn spelling week days".format(wkd))
+import sys
+
+print("---------------------------------------------------------")
+print("\tWorking and Weekend Schedule of classes")
+print("---------------------------------------------------------")
+print("\t MONDAY")
+print("\t TUESDAY")
+print("\t WEDNESDAY")
+print("\t THURSDAY")
+print("\t FRIDAY")
+print("\t SATURDAY")
+print("\t SUNDAY")
+print("\t EXIT")
+print("---------------------------------------------------------")
+
+wkd = (input("Enter the Week name: ").upper())
+match wkd:
+    case "MONDAY":
+        print("{} is Working Day:".format(wkd))
+
+    case "TUESDAY":
+        print("{} is Working Day:".format(wkd))
+
+    case "WEDNESDAY":
+        print("{} is Working Day:".format(wkd))
+
+    case "THURSDAY":
+        print("{} is Working Day:".format(wkd))
+
+    case "FRIDAY":
+        print("{} is Working Day:".format(wkd))
+
+    case "SATURDAY":
+        print("{} is Week End preparing UGAC Plans:".format(wkd))
+
+    case "SUNDAY":
+        print("{} is Holiday Day for Resting :".format(wkd))
+
+    case _:
+        print("{} is not a week Day--> plz learn spelling week days".format(wkd))
 
 
 #                                                          OR
 
 # Program For Match Case Statement by using Bitwise OR '|' Operator
-# wkd = input("Enter the week name:").upper()
-# match (wkd):
-#     case "MONDAY" | "TUESDAY" | "WEDNESDAY" | "THURSDAY" | "FRIDAY":
-#         print("{} is Working Day:".format(wkd))
-#
-#     case "SATURDAY":
-#         print("{} is Week End preparing UGAC Plans:".format(wkd))
-#
-#     case "SUNDAY":
-#         print("{} is Holiday Day for resting :".format(wkd))
-#
-#     case _:
-#         print("{} is not a week Day--plz learn spelling week days".format(wkd))
+wkd = input("Enter the week name:").upper()
+match (wkd):
+    case "MONDAY" | "TUESDAY" | "WEDNESDAY" | "THURSDAY" | "FRIDAY":
+        print("{} is Working Day:".format(wkd))
+
+    case "SATURDAY":
+        print("{} is Week End preparing UGAC Plans:".format(wkd))
+
+    case "SUNDAY":
+        print("{} is Holiday Day for resting :".format(wkd))
+
+    case _:
+        print("{} is not a week Day--plz learn spelling week days".format(wkd))
 
 
 
 # Program For Match Case Statement including if....else.
 
-# wkname = input("Enter Week Name: ").upper()
-# if wkname in ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]:
-#     match (wkname[0: 3]):
-#         case "MON" | "TUE" | "WED" | "THU" | "FRI":
-#             print("{} is Working Day".format(wkname))
-#
-#         case "SAT":
-#             print("{} is Week End preparing UGAC Plans:".format(wkname))
-#
-#         case "SUN":
-#             print("{} is Holiday for Resting".format(wkname))
-#
-# else:
-#     print("{} is not a week Day--plz learn spelling week days".format(wkname))
+wkname = input("Enter Week Name: ").upper()
+if wkname in ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]:
+    match (wkname[0: 3]):
+        case "MON" | "TUE" | "WED" | "THU" | "FRI":
+            print("{} is Working Day".format(wkname))
+
+        case "SAT":
+            print("{} is Week End preparing UGAC Plans:".format(wkname))
+
+        case "SUN":
+            print("{} is Holiday for Resting".format(wkname))
+
+else:
+    print("{} is not a week Day--plz learn spelling week days".format(wkname))
 
 
 n = int(input("Enter how Many number you want to Generate: "))
