@@ -344,3 +344,74 @@ else:
 
 
 
+__quest = '''
+1.) Write a python program which will convert diff temperatures from one scale to another scale.
+---------------------------------------------------------
+               List of Converting Different Temperature   
+---------------------------------------------------------
+                1. Celsius to Kelvin
+                2. Kelvin to Celsius
+                3. Fahrenheit to Celsius
+                4. Celsius to Fahrenheit
+                5. Fahrenheit to Kelvin
+                6. Kelvin to Fahrenheit       
+                7. Exit
+----------------------------------------------------------
+Enter Your Choice:  
+---------------------------------------------------------- '''
+import sys
+while True:
+        # print("---------------------------------------------------------")
+        # print("\tList of Converting Different Temperature ")
+        # print("---------------------------------------------------------")
+        # print("\t1. Celsius to Kelvin")
+        # print("\t2. Kelvin to Celsius")
+        # print("\t3. Fahrenheit to Celsius")
+        # print("\t4. Celsius to Fahrenheit")
+        # print("\t5. Fahrenheit to Kelvin")
+        # print("\t6. Kelvin to Fahrenheit ")
+        # print("\t7. Exit")
+        # print("---------------------------------------------------------")
+
+        temp = float(input("Enter Number According the list: "))
+
+        match temp:
+            case 1:
+                cel = float(input("Enter the Value in Celsius: "))
+                cel_to_kel = cel + 273.15
+                print("The Value of {} into Kelvin is {}".format(cel, cel_to_kel))
+
+            case 2:
+                kel = float(input("Enter the Value in Kelvin: "))
+                kel_to_cel = kel - 273.15
+                print("The Value of {} into Celsius is {}".format(kel, kel_to_cel))
+
+            case 3:
+                fahr = float(input("Enter the Value in Fahrenheit: "))
+                fahr_to_cel = (fahr - 32) * (5/9)
+                print("The Value of {} into Celsius is {}".format(fahr, fahr_to_cel))
+
+            case 4:
+                cel = float(input("Enter the Value in Celsius: "))
+                cel_to_fahr = cel * (9/5) + 32
+                print("The Value of {} into Fahrenheit is {}".format(cel, cel_to_fahr))
+
+            case 5:
+                fahr = float(input("Enter the Value in Fahrenheit: "))
+                fahr_to_kel = (fahr - 32) * (5/9) + 273.15
+                print("The Value of {} into Kelvin is {}".format(fahr, fahr_to_kel))
+
+            case 6:
+                kel = float(input("Enter the Value in Kelvin: "))
+                kel_to_fahr = (kel - 273.15) * (9/5) + 32
+                print("The Value of {} into Fahrenheit is {}".format(kel, kel_to_fahr))
+
+            case 7:
+                print("Thanks for using this Program")
+                sys.exit()
+
+            case _:
+                print("Ur Selection of Operation is Wrong Please Try again")
+
+        print("-------------------------------------------------------------------")
+
