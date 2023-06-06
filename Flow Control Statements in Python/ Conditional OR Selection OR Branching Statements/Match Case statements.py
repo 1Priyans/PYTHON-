@@ -332,18 +332,6 @@ else:
     print("{} is not a week Day--plz learn spelling week days".format(wkname))
 
 
-n = int(input("Enter how Many number you want to Generate: "))
-if n <= 0:
-    print("{} is invalid input")
-else:
-    i = 1
-    while(i <= n):
-        print(i)
-        i = i + 1
-    print("___________________________________")
-
-
-
 __quest = '''
 1.) Write a python program which will convert diff temperatures from one scale to another scale.
 ---------------------------------------------------------
