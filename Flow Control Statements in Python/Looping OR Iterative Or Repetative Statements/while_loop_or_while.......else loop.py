@@ -110,7 +110,7 @@ else:
 
 #                           OR
 
-n = int(input("Enter a Mul Table:"))
+# n = int(input("Enter a Mul Table:"))
 if(n <= 0):
     print("{} is invalid Input".format(n))
 else:
@@ -201,3 +201,68 @@ else:
         print("{}".format(p))
     else:
         print("---------------------------------")
+
+# Program for Implementing string data
+s = "HAVANA"
+i = 0
+while i < len(s):
+    print("\t{}".format(s[i]))
+    i = i + 1
+print("________________________________________")
+
+# For reversing the data
+s = "HAVANA"
+i = 0
+while i < len(s):
+    print("\t{}".format(s[i]))
+    i = i + 1
+print("________________________________________")
+
+
+# Write a Python Program which will find Sum of first n natural numbers, Squares of n natural numbers and Cubes of n natural numbers.
+n = int(input("Enter How Many Numbers Squares Sum u want to find:"))
+if(n <= 0):
+    print("{} is Invalid Input".format(n))
+else:
+    print("--------------------------------------")
+    print("Nat Numbers  Sum within {}".format(n))
+    print("--------------------------------------")
+    print("Nat Nums\tSquares\tCubes")
+    print("--------------------------------------")
+    s, ss, cs=0, 0, 0 # Additive Identity--to keep tarck temp Sum
+    i = 1
+    while(i <=n ):
+        print("\t{}\t\t{}\t\t{}".format(i,i**2,i**3))
+        s = s + i
+        ss = ss + i ** 2
+        cs = cs + i ** 3
+        i = i + 1
+    else:
+        print("=============================")
+        print("\t{}\t\t{}\t\t{}".format(s,ss,cs))
+        print("=============================")
+
+# Write a python programm which will cal Factorial of a given number.
+n = int(input("Enter Number for cal Factorial: "))
+if n < 0:
+    print("{} is Invalid Input".format(n))
+
+else:
+    print("----------------------------------------------------")
+    print("Factorial numbers within {}".format(n))
+    print("----------------------------------------------------")
+    i = 1
+    f = 1
+    while i <= n:
+        f = f * i
+        i = i + 1
+    else:
+        print("Factorial({}!) = {}".format(n, f))
+
+
+
+
+
+
+
+
