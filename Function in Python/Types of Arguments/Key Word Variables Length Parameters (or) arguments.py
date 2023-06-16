@@ -30,141 +30,141 @@ def  funcname(PosFormal parms, *Varlenparams, default params, **kwdvarlenparams)
 # Example:
 # Program for demonstrating Keyword Variable Length arguments
 # This Program will not execute as it is, bcoz PVM remembers Latest Function Definition only and It is a Interpeter
-# def data(sno, sname, sclass, shobby, sfavsub):
-#     print("-"*70)
-#     print("\tStudent Number = {}".format(sno))
-#     print("\tStudent Name = {}".format(sname))
-#     print("\tStudent Class = {}".format(sclass))
-#     print("\tStudent Hobby = {}".format(shobby))
-#     print("\tStudent Fav Subject = {}".format(sfavsub))
-#     print("-"*70)
-#
-# def data(eno, ename, esal, eposition):
-#     print("-"*70)
-#     print("\tEmployee Number = {}".format(eno))
-#     print("\tEmployee Name = {}".format(ename))
-#     print("\tEmployee Salary = {}".format(esal))
-#     print("\tEmployee Position = {}".format(eposition))
-#     print("-"*70)
-#
-# def data(tno, tname, esal):
-#     print("-" * 70)
-#     print("\tTeacher Number = {}".format(tno))
-#     print("\tTeacher Name = {}".format(tname))
-#     print("\tTeacher Salary = {}".format(esal))
-#     print("-" * 70)
-#
-#
-# # Main Program
-# data(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
-# data(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
-# data(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
-#
-#
-# # Program for demonstrating Keyword Variable Length arguments
-# # This Program will execute as it is
-# def data(sno, sname, sclass, shobby, sfavsub):
-#     print("-"*70)
-#     print("\tStudent Number = {}".format(sno))
-#     print("\tStudent Name = {}".format(sname))
-#     print("\tStudent Class = {}".format(sclass))
-#     print("\tStudent Hobby = {}".format(shobby))
-#     print("\tStudent Fav Subject = {}".format(sfavsub))
-#     print("-"*70)
-# # Main Program
-# data(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
-#
-# def data(eno, ename, esal, eposition):
-#     print("-"*70)
-#     print("\tEmployee Number = {}".format(eno))
-#     print("\tEmployee Name = {}".format(ename))
-#     print("\tEmployee Salary = {}".format(esal))
-#     print("\tEmployee Position = {}".format(eposition))
-#     print("-"*70)
-# # Main Program
-# data(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
-#
-# def data(tno, tname, tsal):
-#     print("-" * 70)
-#     print("\tTeacher Number = {}".format(tno))
-#     print("\tTeacher Name = {}".format(tname))
-#     print("\tTeacher Salary = {}".format(tsal))
-#     print("-" * 70)
-# # Main Program
-# data(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
-#
-#
-# # Program for demonstrating Non-Keyword Variable Length arguments
-# # Non-KeyWordVarLenArgs --This Program will execute as it is
-# def data1(sno, sname, sclass, shobby, sfavsub):
-#     print("-"*70)
-#     print("\tStudent Number = {}".format(sno))
-#     print("\tStudent Name = {}".format(sname))
-#     print("\tStudent Class = {}".format(sclass))
-#     print("\tStudent Hobby = {}".format(shobby))
-#     print("\tStudent Fav Subject = {}".format(sfavsub))
-#     print("-"*70)
-#
-# def data2(eno, ename, esal, eposition):
-#     print("-"*70)
-#     print("\tEmployee Number = {}".format(eno))
-#     print("\tEmployee Name = {}".format(ename))
-#     print("\tEmployee Salary = {}".format(esal))
-#     print("\tEmployee Position = {}".format(eposition))
-#     print("-"*70)
-#
-# def data3(tno, tname, tsal):
-#     print("-" * 70)
-#     print("\tTeacher Number = {}".format(tno))
-#     print("\tTeacher Name = {}".format(tname))
-#     print("\tTeacher Salary = {}".format(esal))
-#     print("-" * 70)
-#
-#
-# # Main Program
-# data1(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
-# data2(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
-# data3(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
+def data(sno, sname, sclass, shobby, sfavsub):
+    print("-"*70)
+    print("\tStudent Number = {}".format(sno))
+    print("\tStudent Name = {}".format(sname))
+    print("\tStudent Class = {}".format(sclass))
+    print("\tStudent Hobby = {}".format(shobby))
+    print("\tStudent Fav Subject = {}".format(sfavsub))
+    print("-"*70)
+
+def data(eno, ename, esal, eposition):
+    print("-"*70)
+    print("\tEmployee Number = {}".format(eno))
+    print("\tEmployee Name = {}".format(ename))
+    print("\tEmployee Salary = {}".format(esal))
+    print("\tEmployee Position = {}".format(eposition))
+    print("-"*70)
+
+def data(tno, tname, esal):
+    print("-" * 70)
+    print("\tTeacher Number = {}".format(tno))
+    print("\tTeacher Name = {}".format(tname))
+    print("\tTeacher Salary = {}".format(esal))
+    print("-" * 70)
 
 
-# def data(**val):  # Here **vals are called Keyword Var length Parameter and its type is <class, dict>
-#     print(val, type(val))
-# # Main Program
-# data(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
-# data(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
-# data(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
+# Main Program
+data(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
+data(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
+data(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
 
 
 # Program for demonstrating Keyword Variable Length arguments
-# def data2(**vals):  # # Here **vals are called Keyword Var length Parameter and its type is <class, dict>
-#     print("-" * 80)
-#     for key, val in vals.items():
-#         print("\t{} :\t{}".format(key, val))
-#     print("-" * 80)
-#
-#     print("-" * 80)
-# # Main Program
-# data2(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
-# data2(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
-# data2(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
+# This Program will execute as it is
+def data(sno, sname, sclass, shobby, sfavsub):
+    print("-"*70)
+    print("\tStudent Number = {}".format(sno))
+    print("\tStudent Name = {}".format(sname))
+    print("\tStudent Class = {}".format(sclass))
+    print("\tStudent Hobby = {}".format(shobby))
+    print("\tStudent Fav Subject = {}".format(sfavsub))
+    print("-"*70)
+# Main Program
+data(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
+
+def data(eno, ename, esal, eposition):
+    print("-"*70)
+    print("\tEmployee Number = {}".format(eno))
+    print("\tEmployee Name = {}".format(ename))
+    print("\tEmployee Salary = {}".format(esal))
+    print("\tEmployee Position = {}".format(eposition))
+    print("-"*70)
+# Main Program
+data(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
+
+def data(tno, tname, tsal):
+    print("-" * 70)
+    print("\tTeacher Number = {}".format(tno))
+    print("\tTeacher Name = {}".format(tname))
+    print("\tTeacher Salary = {}".format(tsal))
+    print("-" * 70)
+# Main Program
+data(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
+
+
+# Program for demonstrating Non-Keyword Variable Length arguments
+# Non-KeyWordVarLenArgs --This Program will execute as it is
+def data1(sno, sname, sclass, shobby, sfavsub):
+    print("-"*70)
+    print("\tStudent Number = {}".format(sno))
+    print("\tStudent Name = {}".format(sname))
+    print("\tStudent Class = {}".format(sclass))
+    print("\tStudent Hobby = {}".format(shobby))
+    print("\tStudent Fav Subject = {}".format(sfavsub))
+    print("-"*70)
+
+def data2(eno, ename, esal, eposition):
+    print("-"*70)
+    print("\tEmployee Number = {}".format(eno))
+    print("\tEmployee Name = {}".format(ename))
+    print("\tEmployee Salary = {}".format(esal))
+    print("\tEmployee Position = {}".format(eposition))
+    print("-"*70)
+
+def data3(tno, tname, tsal):
+    print("-" * 70)
+    print("\tTeacher Number = {}".format(tno))
+    print("\tTeacher Name = {}".format(tname))
+    print("\tTeacher Salary = {}".format(tsal))
+    print("-" * 70)
+
+
+# Main Program
+data1(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
+data2(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
+data3(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
+
+
+def data(**val):  # Here **vals are called Keyword Var length Parameter and its type is <class, dict>
+    print(val, type(val))
+# Main Program
+data(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
+data(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
+data(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
+
 
 # Program for demonstrating Keyword Variable Length arguments
-# def findtotalmarks(sno, sname, sclass, **vals):
-#         print("-"*60)
-#         print("\tStudent Number = {}".format(sno))
-#         print("\tStudent Name = {}".format(sname))
-#         print("\tStudent Class = {}".format(sclass))
-#         print("-" * 60)
-#         totalmrks = 0
-#         for sn,sm in vals.items():
-#             print("\t{}: {}\t".format(sn, sm))
-#             totalmrks = totalmrks + sm
-#         print("Total Marks = {}".format(totalmrks))
-# #Main program
-# findtotalmarks(100, "Goku", "X", Tel=50, Hindi=60, Eng=65, Maths=66, Science=67, Social=68)
-# findtotalmarks(200, "Naruto", "XII", Mathematics=74, Physics=55, Chemistry=50)
-# findtotalmarks(300, "Vigeta", "B.Tech", cm=60, cpp=55, python=50, DBMS=50)
-# findtotalmarks(400, "Tex", "P.hD", RM=55)
+def data2(**vals):  # # Here **vals are called Keyword Var length Parameter and its type is <class, dict>
+    print("-" * 80)
+    for key, val in vals.items():
+        print("\t{} :\t{}".format(key, val))
+    print("-" * 80)
+
+    print("-" * 80)
+# Main Program
+data2(sno=100, sname="MAVERICK", sclass="B.Tech", shobby="Cricket", sfavsub="Coding")  # Function call-1 with 5 keyword Variable length args
+data2(eno=101, ename="Tex", esal = 2.3, eposition="Devlopment")  # Function call-1 with 4 keyword Variable length args
+data2(tno=102, tname="ROSSUM", tsal=1.2)  # Function call-1 with 3 keyword Variable length args
+
+# Program for demonstrating Keyword Variable Length arguments
+def findtotalmarks(sno, sname, sclass, **vals):
+        print("-"*60)
+        print("\tStudent Number = {}".format(sno))
+        print("\tStudent Name = {}".format(sname))
+        print("\tStudent Class = {}".format(sclass))
+        print("-" * 60)
+        totalmrks = 0
+        for sn,sm in vals.items():
+            print("\t{}: {}\t".format(sn, sm))
+            totalmrks = totalmrks + sm
+        print("Total Marks = {}".format(totalmrks))
+#Main program
+findtotalmarks(100, "Goku", "X", Tel=50, Hindi=60, Eng=65, Maths=66, Science=67, Social=68)
+findtotalmarks(200, "Naruto", "XII", Mathematics=74, Physics=55, Chemistry=50)
+findtotalmarks(300, "Vigeta", "B.Tech", cm=60, cpp=55, python=50, DBMS=50)
+findtotalmarks(400, "Tex", "P.hD", RM=55)
 
 
 def findtotalmarks(snumber, sname, sclass, *vals, scity="Hyd", **val):
