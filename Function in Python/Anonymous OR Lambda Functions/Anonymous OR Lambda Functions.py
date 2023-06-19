@@ -64,7 +64,7 @@ print("{} is {}".format(word, res))
 
 
 # Write a Python Program which will accept a word and Decide weather it is Vowel word or not by using Anonymous Function.
-vowl = lambda word: "Vowel Word" if word == "a" or word == "e" or word ==  "i" or word == "o" or word == "u" else "Not Vowel Word"
+vowl = lambda word: "Vowel Word" if word == "a" or word == "e" or word == "i" or word == "o" or word == "u" else "Not Vowel Word"
 # Main Program
 word = input("Enter Any Word for which the Word is Vowel word or Not: ").lower()
 res = vowl(word)
@@ -72,6 +72,63 @@ print("{} is {}".format(word, res))
 
 
 # Write a python programm which will accept list of numerical values and find the maximum and minimum by using Anonymous Funtion.
+def readval():
+    n = int(input("Enter How Many Numbers You Want to Generate: "))
+    if n <= 0:
+        return []  # Returns Empty List
+    else:
+        lst = []
+        for i in range(1, n+1):
+            val = int(input("Enter {} Value: ".format(i)))
+            lst.append(val)
+        return lst  # Return Non-Empty List
+maxval = lambda lst: max(lst)
+minval = lambda lst: min(lst)
+# Main Program
+lst = readval()  # Normal Functional Call
+if (len(lst) == 0):
+    print("No Element find so Can't Find max and min values")
+else:
+    maxv = maxval(lst)
+    minv = minval(lst)
+    print("Maximum Numerical Value from the List {} = {}".format(lst, maxv))
+    print("Minimum Numerical Value from the List {} = {}".format(lst, minv))
+
+# Program for finding max and min values from the given list by using anonymous Functions
+findmaxval = lambda lst: max(lst)
+findminval = lambda lst: min(lst)
+# Main Program
+lst = [12, 13, 23, 34, 242, 234, 24, 223, 4243,]
+bv = findmaxval(lst)
+mv = findminval(lst)
+print("Maximum Values from the Given list {} = {}".format(lst, bv)) # Maximum Values from the Given list [12, 13, 23, 34, 242, 234, 24, 223, 4243] = 4243
+print("Minimum Values from the Given list {} = {}".format(lst, mv)) # Minimum Values from the Given list [12, 13, 23, 34, 242, 234, 24, 223, 4243] = 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
