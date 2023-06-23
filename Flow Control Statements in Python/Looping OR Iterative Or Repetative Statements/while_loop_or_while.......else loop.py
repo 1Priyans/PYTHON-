@@ -153,7 +153,7 @@ else:
     ss = 0  # Additive Identity--to keep tarck temp Sum
     i = 1
     while(i <= n):
-        print("\tSquare({}) = {}".format(i, i**2))
+        print("\tSquare,Circle({}) = {}".format(i, i**2))
         ss = ss + i ** 2
         i = i + 1
     else:
@@ -173,7 +173,7 @@ else:
     c = 0  # Additive Identity--to keep tarck temp Sum
     i = 1
     while(i <= n):
-        print("\tSquare({}) = {}".format(i, i**3))
+        print("\tSquare,Circle({}) = {}".format(i, i**3))
         c = c + i ** 3
         i = i + 1
     else:
