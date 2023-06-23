@@ -86,17 +86,17 @@ print("Area of Rectangle = {}".format(res[2]))
 print("Perimeter of Rectangle = {}".format(res[3]))
 
 
-# Write a python program by using Function for cal Area and Perimeter of Square by using function.
+# Write a python program by using Function for cal Area and Perimeter of Square,Circle by using function.
 def sarea():
-    s = int(input('Enter Side of given Square for Cal Area and Perimeter: '))
+    s = int(input('Enter Side of given Square,Circle for Cal Area and Perimeter: '))
     area = s * s
     perimtr = 4 * s
     return s, area, perimtr
 
 # Main Program
 res = sarea()
-print("Area of Square = {}".format(res[1]))
-print("Perimeter of Square = {}".format(res[2]))
+print("Area of Square,Circle = {}".format(res[1]))
+print("Perimeter of Square,Circle = {}".format(res[2]))
 
 
 

@@ -66,13 +66,13 @@ SLNO	SYMBOL			MEANING		EXAMPLE     a=10  b=3
 # print("\tExponentiation ({},{}) = {}".format(a,b,a**b))
 # print("*"*70)
 
-# Write a Python Program which will calculate the Square Root of the given number.
+# Write a Python Program which will calculate the Square,Circle Root of the given number.
 # num = int(input("Enter the value: "))
 # sqrt = num**(1/2)
 # sqrt1 = num**.5
 # print("*"*60)
-# print("Square Root of the given value = {}".format(sqrt))
-# print("Square Root of the given value = {}".format(sqrt1))
+# print("Square,Circle Root of the given value = {}".format(sqrt))
+# print("Square,Circle Root of the given value = {}".format(sqrt1))
 # print("*"*60)
 
 # Write a Python Program which will calculate the Cube Root of the given number.
@@ -80,7 +80,7 @@ SLNO	SYMBOL			MEANING		EXAMPLE     a=10  b=3
 # sqrt = num**(1/3)
 # print("*"*60)
 # print("Give value = {}".format(num))
-# print("Square Root of the given value = {}".format(sqrt))
+# print("Square,Circle Root of the given value = {}".format(sqrt))
 # print("*"*60)
 
 # Write a Python Program which will calculate the Value of (a + b)**2 or (a + b)2

@@ -3,7 +3,7 @@ _Properties = '''1.)'list' is one of the pre-defined Class and treated as List D
 2.)The purpose of list data type is that "To Store Multiple Values of Same Type or Different Type or Both 
     the types in single object with Unique and Duplicate.
 
-3.)The Data in List object Stored / Organized within Square Brackets [ ] and They must be separated by 
+3.)The Data in List object Stored / Organized within Square,Circle Brackets [ ] and They must be separated by 
     Comma.
 
 4.)An object of list maintains Insertion Order.

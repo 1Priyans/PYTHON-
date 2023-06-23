@@ -123,7 +123,7 @@ _ques = '''
 ---------------------------------------------------------
                  C. Circle
                  R. Rectangle
-                 S. Square
+                 S. Square,Circle
                  T. Triangle
                  E. Exit                 
 ----------------------------------------------------------
@@ -136,7 +136,7 @@ print("\tArea of Different Figures")
 print("---------------------------------------------------------")
 print("C. Circle")
 print("R. Rectangle")
-print("S. Square")
+print("S. Square,Circle")
 print("T. Triangle")
 print("E. Exit")
 print("---------------------------------------------------------")
@@ -157,7 +157,7 @@ match(ch):
     case "S":
         s = float(input("Enter Side: "))
         ar = s ** 2
-        print("\tArea of Square ({}) = {}".format(s, ar))
+        print("\tArea of Square,Circle ({}) = {}".format(s, ar))
 
     case "T":
         b = float(input("Enter Base: "))
@@ -182,7 +182,7 @@ _quest = '''
 ---------------------------------------------------------
                  C. Circle
                  R. Rectangle
-                 S. Square
+                 S. Square,Circle
                  T. Triangle
                  E. Exit                 
 ----------------------------------------------------------
@@ -198,7 +198,7 @@ while True:
     print("---------------------------------------------------------")
     print("C. Circle")
     print("R. Rectangle")
-    print("S. Square")
+    print("S. Square,Circle")
     print("T. Triangle")
     print("E. Exit")
     print("---------------------------------------------------------")
@@ -218,7 +218,7 @@ while True:
         case "S":
             s = float(input("Enter Side: "))
             ar = s ** 2
-            print("\tArea of Square ({}) = {}".format(s, ar))
+            print("\tArea of Square,Circle ({}) = {}".format(s, ar))
 
         case "T":
             b = float(input("Enter Base: "))

@@ -96,12 +96,12 @@ print("Area = %.2f" %ar)
 print("Perimeter = %.2f" %peri)
 print("*"*60)
 
-# E Program for cal Area and Perimeter of Square
-s = float(input("Enter the given side of Square: "))
+# E Program for cal Area and Perimeter of Square,Circle
+s = float(input("Enter the given side of Square,Circle: "))
 ar = s**2
 peri = 4*s
 print("*"*70)
-print("Side of the Square  = {}".format(s))
-print("Area of Square = {}".format(ar))
-print("Perimeter of Square = {}".format(peri))
+print("Side of the Square,Circle  = {}".format(s))
+print("Area of Square,Circle = {}".format(ar))
+print("Perimeter of Square,Circle = {}".format(peri))
 print("*"*70)

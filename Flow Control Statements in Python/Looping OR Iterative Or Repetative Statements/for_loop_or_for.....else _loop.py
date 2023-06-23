@@ -117,7 +117,7 @@ if n <= 0:
 
 else:
     print("________________________________________________________________________________________________________________")
-    print("Natural Nums {}  Square Nums {}  Cubes Nums {}".format(n,n,n))
+    print("Natural Nums {}  Square,Circle Nums {}  Cubes Nums {}".format(n,n,n))
     s, ss, c = 0, 0, 0
     for i in range(1, n + 1):
         print("\t\t\t{}  \t\t\t{}  \t\t\t{} ".format(i, i, i))
