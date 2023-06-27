@@ -15,13 +15,12 @@ Pre-defined Functions in str object
 10.) isdigit()
 11.) isalnum()
 12.) isspace()
-13.) split()
-14.) split("str")
-15.) join()
-16.) count()
-17.) startswith()
-18.) endswith() 
-19.) swapcase()"""
+13.) split() and split("str")
+14.) join()
+15.) count()
+16.) startswith()
+17.) endswith() 
+18.) swapcase()"""
 
 _ = '''
 1) capitalize()
@@ -232,7 +231,7 @@ Syntax:     strobj.isupper()'''
 
 
 _ = '''
-7)islower()
+7) islower()
 --------------------------------------------------------------------------------------------------------------------------------
 =>This Function returns True provided the given str object data is purely lower Case otherwise it returns False.
 
@@ -403,6 +402,123 @@ Syntax:    strobj.split("Delimter")
 			listobj=  strobj.split("Delimter")
 				(OR)
 			listobj=strobj.split()"""
+# # Example:
+# s = "Python is an OOp Language"
+# print(len(s))  # 25
+# t = s.split()
+# print(t, type(t))  # ['Python', 'is', 'an', 'OOp', 'Language'] <class 'list'>
+# print(len(t))  # 5
+#
+# s1 = "12-09-2022"
+# t1 = s1.split()
+# print(t1, type(t1))  # ['12-09-2022'] <class 'list'>
+# t2 = s1.split("-")
+# print(t2, type(t2))  # ['12', '09', '2022'] <class 'list'>
+#
+# s2 = "Apple#Banana#kiwi/Guava"
+# t2 = s2.split()
+# print(t2, type(t2))  # ['Apple#Banana#kiwi/Guava'] <class 'list'>
+#
+# t3 = s2.split("#")
+# print(t3, type(t3))  # ['Apple', 'Banana', 'kiwi/Guava'] <class 'list'>
+#
+# t4 = s2.split("/")
+# print(t4,type(t4))  # ['Apple#Banana#kiwi', 'Guava'] <class 'list'>
+
+
+_ = """
+13) join():
+-------------------------------------------------------------------------------
+=>This Function is used for combining or joining list of values from any Iterable object
+
+Syntax:    strobj.join(Iterableobject)"""
+# # Example:
+# lst=["HYD","BANG","AP","DELHI"]
+# print(lst,type(lst))
+# lst1 = ""
+# print(lst1.join(lst), type(lst1.join(lst)))  # HYDBANGAPDELHI <class 'str'>
+#
+# lst=["HYD","BANG","AP","DELHI"]
+# print(lst,type(lst))
+# lst2 = " "
+# print(lst2.join(lst),type(lst1.join(lst2)))  # HYD BANG AP DELHI <class 'str'>
+#
+# list = ["Python", "is", "Dynamically", "Typed,", "Free & OpenSource", "and", "Robust", "Language"]
+# print(list,type(list)) # ['Python', 'is', 'Dynamically', 'Typed', ',', 'Free & OpenSource', 'and', 'Robust', 'Language'] <class 'list'>
+# list2 = " "
+# print(list2.join(list),type(list2.join(list)))  # Python is Dynamically Typed, Free & OpenSource and Robust Language <class 'str'>
+
+
+_ = """
+14) count()
+-----------
+The count() fucntions returns the number of times a specified value appears in the string.
+
+Syntax:   strobj.count(strvalue)"""
+# # Example:
+# s = "MISSISSIPPI"
+# print(s.count("M")) # 1
+# print(s.count("I")) # 4
+# print(s.count("S")) # 4
+# print(s.count("P")) # 2
+
+
+_ = """
+15) startswith()
+---------------
+Syntax:   strobj.startswith(strvalue)
+
+The startswith()  returns True if the string starts with the specified value, otherwise False."""
 # Example:
+s = "python is an OOp lang"
+print(s.startswith("python"))  # True
+print(s.startswith("Python"))  # False
+print(s.startswith("ython"))  # False
+
+
+_ = """
+16) endswith()
+---------------
+Syntax:   strobj.endswith(strvalue)
+
+The functions  returns True if the string ends with the specified value, otherwise False."""
+# Example
+s = "python is an OOp lang"
+print(s.endswith("lang"))  # True
+print(s.endswith("Lang"))  # False
+print(s.endswith("Python"))  # False
+
+
+
+
+
+_ = """
+17) swapcase()
+--------------
+The swapcase() functions returns a string where all the upper case letters are lower case and vice versa.
+
+Syntax: strobj1.swapcase()"""
+# # Example:
+# s = "python"
+# print(s.swapcase())  # PYTHON
+#
+# s1 = "PYTHON"
+# print(s1.swapcase())  # python
+#
+# s2 = "PyThOn"
+# print(s2.swapcase())  # pYtHoN
+#
+# s3 = "PYThon"
+# print(s3.swapcase())  # pytHON
+#
+# s4 = "hyderabad"
+# print(s4.swapcase())  # HYDERABAD
+# print(s4.upper())
+# print(s4.lower())
+
+
+
+
+
 
 
